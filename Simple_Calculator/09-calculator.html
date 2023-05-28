@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="/Simple_calculator/09-calculator.css" />
+  </head>
+  <body>
+    <div class="calculator_flex">
+      <div class="result_flex">
+        <div class="calculation_box">
+          <p class="display_calculation"></p>
+        </div>
+        <div class="result_box">
+          <p class="display_result"></p>
+        </div>
+      </div>
+      <div class="key_flex">
+        <p>
+          <button onclick="calculation+='1';calculating();">1</button>
+          <button
+            onclick="calculation+='2';
+      calculating()"
+          >
+            2
+          </button>
+          <button
+            onclick="calculation+='3';
+      calculating()"
+          >
+            3
+          </button>
+        </p>
+
+        <p>
+          <button
+            onclick="calculation+='4';
+      calculating()"
+          >
+            4
+          </button>
+          <button
+            onclick="calculation+='5';
+      calculating()"
+          >
+            5
+          </button>
+          <button
+            onclick="calculation+='6';
+      calculating()"
+          >
+            6
+          </button>
+        </p>
+
+        <p>
+          <button
+            onclick="calculation+='7';
+      calculating()"
+          >
+            7
+          </button>
+          <button
+            onclick="calculation+='8';
+      calculating()"
+          >
+            8
+          </button>
+          <button
+            onclick="calculation+='9';
+      calculating();"
+          >
+            9
+          </button>
+        </p>
+
+        <p class="buts_4">
+          <button
+            onclick="calculation+='0';
+      calculating()"
+          >
+            0
+          </button>
+          <button
+            onclick="calculation+='+';
+      calculating()"
+          >
+            +
+          </button>
+          <button
+            onclick="calculation+='-';
+      calculating()"
+          >
+            -
+          </button>
+          <button
+            onclick="calculation+='/';
+      calculating()"
+          >
+            /
+          </button>
+        </p>
+
+        <p class="buts_4">
+          <button
+            onclick="calculation+='*';
+      calculating()"
+          >
+            *
+          </button>
+          <button class="equalto" onclick="calculating_result()">=</button>
+          <button
+            onclick="
+      calculation=''
+      calculating()
+      calculating_result()"
+          >
+            All Clear
+          </button>
+          <button
+            onclick="
+      calculating()
+      remove_num()"
+          >
+            Backspace
+          </button>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      let calculation = "";
+
+      let display_calcul = document.querySelector(".display_calculation");
+
+      function calculating() {
+        console.log(`Let calculation:${calculation}`);
+
+        display_calcul.innerHTML = calculation;
+      }
+
+      //function of removing
+      function remove_num() {
+        //calculation=JSON.stringify(calculation)
+        let cal = calculation.split("");
+        console.log(cal);
+        cal.pop();
+        calculation = cal.join("");
+        console.log(calculation);
+        display_calcul.innerHTML = calculation;
+      }
+
+      //resulting
+      function calculating_result() {
+        calculation = eval(calculation);
+
+        let cal = document.querySelector(".equalto");
+
+        if (calculation === undefined) {
+          calculation = "";
+          let result = (document.querySelector(".display_result").innerHTML =
+            calculation);
+          console.log(calculation);
+        }
+        let result = (document.querySelector(".display_result").innerHTML =
+          calculation);
+      }
+    </script>
+  </body>
+</html>
