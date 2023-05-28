@@ -1,0 +1,138 @@
+body{
+  display: grid;
+  background-color:rgb(0, 0, 0);
+  color: azure;
+}
+.title_box{
+  font-size: 20px;
+  font-family: Tahoma;
+  text-align: center;
+}
+.min_sec_title{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  font-family:Helvetica;
+  font-size: 30px;
+
+}
+.dis_m_s{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  font-family:Helvetica;
+  height: 100px;
+  font-size: 50px;
+}
+
+.set_3{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 10px;
+}
+.in_time{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  font-family:Helvetica;
+  height: 50px;
+}
+.input_min{
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  border-color: white;
+}
+.input_sec{
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  border-color: white;
+}
+
+
+
+
+.st_op_but{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  font-family:Helvetica;
+  height: 50px;
+}
+.reset_but{
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  height: 50px;
+}
+.start_button{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  border-color: azure;
+  font-family:Arial;
+  font-style:normal;
+  border-width: 5px;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition:color 1s ease-out,background-color 1s ease-out,border-color 1s ease-out;
+  border-style:;
+}
+.start_button:hover{
+  color: rgb(25, 151, 0);
+  background-color: rgb(255, 254, 254);
+  border-color: rgb(118, 182, 92);
+  font-family:Arial;
+}
+.stop_button{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  border-color: azure;
+  font-family:Arial;
+  font-style:normal;
+  border-width: 5px;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition:color 1s ease-out,background-color 1s ease-out,border-color 1s ease-out;
+  border-style:;
+}
+.stop_button:hover{
+  color: rgb(158, 148, 0);
+  background-color: rgb(255, 254, 254);
+  border-color: rgb(170, 168, 60);
+  font-family:Arial;
+}
+.reset_button{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  border-color: azure;
+  font-family:Arial;
+  font-style:normal;
+  border-width: 5px;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition:color 1s ease-out,background-color 1s ease-out,border-color 1s ease-out;
+  border-style:;
+}
+.reset_button:hover{
+  color: rgb(160, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 116, 116);
+  font-family:Arial;
+}
