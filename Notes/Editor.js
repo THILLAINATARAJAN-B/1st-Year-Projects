@@ -14,7 +14,7 @@ function Save()
 };
 function Cancel()
 {
-  window.history.go(0);
+  window.history.go(-1);
   window.history.back(10);
   window.onload="Short_Notes.html";
 }
