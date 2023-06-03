@@ -1,4 +1,4 @@
-location.reload();
+
 let original_list=[];
 List();
 inputing();
