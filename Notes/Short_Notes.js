@@ -2,7 +2,7 @@
 let original_list=[];
 List();
 inputing();
-
+window.history.go(-1);
 document.querySelector('.Create_btn').addEventListener("click",()=>{
   window.location.href="Editor.html";
   
