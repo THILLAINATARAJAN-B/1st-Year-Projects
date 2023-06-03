@@ -1,6 +1,6 @@
 
 document.querySelector('.Create_btn').addEventListener("click",()=>{
-  window.location.href="/Editor.html"
+  window.location.href="Editor.html"
 })
 
 let original_list=[];
