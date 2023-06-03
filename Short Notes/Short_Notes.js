@@ -1,12 +1,12 @@
+let original_list=[];
+List();
+inputing();
 
 document.querySelector('.Create_btn').addEventListener("click",()=>{
   window.location.href="Short Notes/Editor.html"
 })
 
-let original_list=[];
 
-List();
-inputing();
 
 function inputing()
 {
