@@ -34,7 +34,7 @@ function List()
   </div>
 
   <div class="access_btn">
-  <button class="delete_button_2 Delete_btn"; ><img src="/SVG/trash-2.svg" alt="trash_button"></button>
+  <button class="delete_button_2 Delete_btn"; ><img src="SVG/trash-2.svg" alt="trash_button"></button>
   </div>
   `;
     todo_list+=li1;
@@ -78,7 +78,7 @@ function List()
 
             <div class="dis_access_btn">
 
-              <button onclick="close_1()" class="close"><img src="/SVG/x-square.svg" alt="close button"></button>
+              <button onclick="close_1()" class="close"><img src="SVG/x-square.svg" alt="close button"></button>
             </div>
           </div>
           
