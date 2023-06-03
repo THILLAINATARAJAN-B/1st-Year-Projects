@@ -10,7 +10,9 @@ function Save()
   console.log(localStorage);
   document.querySelector('.title_box').value='';
   document.querySelector('.text_box').value='';
-  window.history.back();
+  window.history.go(-1);
+  window.history.back(10);
+  window.onload="Short_Notes.html";
 };
 function Cancel()
 {
