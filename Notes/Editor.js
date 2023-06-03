@@ -16,5 +16,5 @@ function Cancel()
 {
   window.history.go(0);
   window.history.back(10);
-  window.onload="/Short_Notes.html";
+  window.onload="Short_Notes.html";
 }
