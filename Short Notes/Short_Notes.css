@@ -1,0 +1,142 @@
+body
+{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+.Create_btn
+{
+  
+  background-color: transparent;
+  position:relative;
+  border: 0ch;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.Create_btn:hover
+{
+  background-color: rgb(63, 255, 46);
+  box-shadow: 0px 5px 20px rgba(97, 255, 5, 0.4);
+  transform: translate(-5px);
+}
+
+.Top
+{
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.List_1
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.text_viewer
+{
+  text-align: left;
+  font-size: 30px;
+  border: 0ch;
+  background-color: transparent;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: whitesmoke;
+  width: 100%;
+  transition: all 0.5s ease 0s;
+}
+.text_viewer:hover
+{
+  font-weight: bold;
+  color: aqua;
+  
+}
+
+
+.access_btn
+{
+  text-align: right;
+}
+.Delete_btn
+{
+  background-color: rgb(205, 255, 185);
+  position:relative;
+  border: 0ch;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+}
+.Delete_btn:hover
+{
+  background-color: #e5d32e;
+  box-shadow: 0px 15px 20px rgba(229, 217, 46, 0.4);
+  transform: translate(-3px);
+}
+
+.Displays
+{
+  display: grid;
+  grid-template-rows:auto;
+  row-gap: 10px;
+  color: aliceblue;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.title_cont
+{
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Century Gothic;
+  color: aliceblue;
+
+}
+.text_1
+{
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 10px;
+  font-size: 25px;
+  font-family: Century Gothic;
+  color: aliceblue;
+}
+
+
+.dis_access_btn{
+  text-align: right;
+}
+.close
+{
+  background-color: transparent;
+  border: 0ch;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.close:hover
+{
+  box-shadow: 0px 0px 20px rgba(77, 3, 0, 0.4);
+  transform: translate(-2px);
+}
+
+.Container
+{
+  display:grid;
+  grid-template-columns: 1fr 1fr ;
+}
+
+.sidebar
+{
+  
+  height: 200px;
+}
+
+
+
